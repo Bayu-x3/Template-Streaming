@@ -1,0 +1,242 @@
+#player {
+    width: 640px;
+    height: 480px;
+  }
+  
+  #video {
+    width: 100%;
+    height: 100%;
+  }
+  /* Add some styling for the page */
+  body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+  .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .movie {
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .movie:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .movie-poster {
+    width: 100%;
+    
+    transition-duration: 0.5s;
+    object-fit: cover;
+  }
+  .movie-info {
+    border-radius: 9px;
+    box-shadow: 1px 1px 9px black;
+    transition-duration: 0.5s;
+    padding: 10px;
+  }
+  .movie-info:hover {
+    transform: scale(1.03);
+  }
+  .movie-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  .movie-description {
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 10px;
+  }
+  .movie-description-1 {
+    color: grey;
+    margin-bottom: 10px;
+  }
+  .movie-button {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }  
+    *, html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+
+    }
+    .container {
+        max-width: 50%;
+        margin: 0 auto;
+        position: relative;
+    }
+  .header {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+    .bawah {
+      color: #444;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  body{
+      background: whitesmoke;
+  }
+  .navbar {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      padding: 10px;
+      background: #444;
+      box-shadow: 0 0 10px gray;
+      position: fixed;
+      z-index: 9999;
+      display: flex;
+  }
+  .navbar .logo {
+     justify-content: flex-end;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+  }
+  .navbar .logo-title {
+    padding-left: 17em;
+    justify-content: flex-end;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+  }
+  .navbar .toggler-navbar {
+      margin-right: 15px;
+  }
+  .sidebar {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 300px;
+      height: 100%;
+      background: #4f5458;
+      text-align: left;
+      font-size: 20px;
+      transform: rotate3d(0, 1, 0, 90deg);
+      transform-origin: left center;
+      transition: .5s;
+  }
+  
+  .sidebar.open {
+      transform: rotate3d(0, 0, 1, 0deg);
+  }
+  .sidebar ul{
+      list-style: none;
+  }
+  
+  .sidebar li:hover,
+  .sidebar li.active {
+      background: #0000003f;
+  }
+  
+  .sidebar li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block
+  }
+  .hamburger-menu {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer;
+  }
+  
+  .hamburger-menu span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: white;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+  }
+  
+  .hamburger-menu span:nth-child(1) {
+      top: 2.5px;
+  }
+  
+  .hamburger-menu span:nth-child(2) {
+      top: 11px;
+  }
+  
+  .hamburger-menu span:nth-child(3) {
+      top: 21px;
+  }
+  
+  .hamburger-menu.open span:nth-child(1) {
+      top: 15px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+  }
+  
+  .hamburger-menu.open span:nth-child(2) {
+      opacity: 0;
+      left: -60px;
+  }
+  
+  .hamburger-menu.open span:nth-child(3) {
+      top: 14px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+  }

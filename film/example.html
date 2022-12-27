@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <title>Streaming Shang-Chi</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style.css"
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./styleFilm.css" />
+  <script src="https://cdn.jsdelivr.net/gh/SH20RAJ/Sopplayer/mooviejs/js/moovie.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SH20RAJ/Sopplayer/mooviejs/css/moovie.min.css">
+<link rel="stylesheet" href="../assets/dark-mode.css" id="dark-mode-stylesheet">
+
+</head>
+<video id="example1" poster="https://github.com/SH20RAJ/Sopplayer/blob/main/sample.png?raw=true">
+  <source src="https://bit.ly/bbsamplevideo" type="video/mp4">
+
+  <track kind="captions" label="English" srclang="en" src="https://cdn.jsdelivr.net/gh/BMSVieira/moovie.js@main/demo-template/subtitles/en.vtt">  
+  Your browser does not support the video tag.
+</video>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+   video1 = new Moovie({
+      selector: "#example1",
+      config: {
+          controls : {
+              playtime : true,
+              mute : true,
+              volume : true,
+              config : true,
+              fullscreen : true,
+              submenuCaptions : true,
+              submenuOffset : true,
+              submenuSpeed : true,
+              allowLocalSubtitles : true
+          }
+      }
+   });
+});
+</script>
+  <script src="../assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+/* Change the colors and styles for the page in dark mode */
+body {
+    background-color: #222;
+    color: #ccc;
+  }
+  .movie-container {
+    background-color: #333;
+  }
+  .movie {
+    background-color: #333;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  }
+  .movie-info {
+    background-color: #444;
+  }
+  .movie-button {
+    background-color: #444;
+    border: 1px solid #555;
+    color: #ccc;
+  }
+  
